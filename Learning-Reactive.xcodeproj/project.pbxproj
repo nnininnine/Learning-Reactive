@@ -139,7 +139,7 @@
 		1E500DB82860770B006483A0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1E500DBA2860788D006483A0 /* ThaiDigits */,
+				1E500DBA2860788D006483A0 /* ThaiDigit */,
 				1E500DB928607719006483A0 /* Main */,
 			);
 			path = Screens;
@@ -155,12 +155,12 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		1E500DBA2860788D006483A0 /* ThaiDigits */ = {
+		1E500DBA2860788D006483A0 /* ThaiDigit */ = {
 			isa = PBXGroup;
 			children = (
 				1E500DBB286078AC006483A0 /* View */,
 			);
-			path = ThaiDigits;
+			path = ThaiDigit;
 			sourceTree = "<group>";
 		};
 		1E500DBB286078AC006483A0 /* View */ = {

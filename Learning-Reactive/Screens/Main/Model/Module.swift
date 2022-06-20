@@ -11,5 +11,6 @@ typealias Modules = [Module]
 
 struct Module {
     let name: String
+    let storyboardIdentifier: String
     let identifier: String
 }

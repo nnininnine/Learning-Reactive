@@ -9,9 +9,11 @@ import Foundation
 
 class MainViewModel {
     // MARK: Property
-    let modules: Modules = .init()
-    
+
+    let modules: Modules = [Module(name: "Convert thai digit", storyboardIdentifier: "ThaiDigitStoryboard", identifier: "ThaiDigitViewController")]
+
     // MARK: Initial
+
     init() {
         print("init")
     }
