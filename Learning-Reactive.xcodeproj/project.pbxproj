@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E500D8928606FE0006483A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500D8828606FE0006483A0 /* AppDelegate.swift */; };
+		1E500D8B28606FE0006483A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500D8A28606FE0006483A0 /* SceneDelegate.swift */; };
+		1E500D8D28606FE0006483A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500D8C28606FE0006483A0 /* ViewController.swift */; };
+		1E500D9028606FE0006483A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E500D8E28606FE0006483A0 /* Main.storyboard */; };
+		1E500D9228606FE1006483A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E500D9128606FE1006483A0 /* Assets.xcassets */; };
+		1E500D9528606FE1006483A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E500D9328606FE1006483A0 /* LaunchScreen.storyboard */; };
+		1E500DA028606FE2006483A0 /* Learning_ReactiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500D9F28606FE2006483A0 /* Learning_ReactiveTests.swift */; };
+		1E500DAA28606FE2006483A0 /* Learning_ReactiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DA928606FE2006483A0 /* Learning_ReactiveUITests.swift */; };
+		1E500DAC28606FE2006483A0 /* Learning_ReactiveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DAB28606FE2006483A0 /* Learning_ReactiveUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E500D9C28606FE2006483A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E500D7D28606FE0006483A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E500D8428606FE0006483A0;
+			remoteInfo = "Learning-Reactive";
+		};
+		1E500DA628606FE2006483A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E500D7D28606FE0006483A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E500D8428606FE0006483A0;
+			remoteInfo = "Learning-Reactive";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E500D8528606FE0006483A0 /* Learning-Reactive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning-Reactive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E500D8828606FE0006483A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E500D8A28606FE0006483A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1E500D8C28606FE0006483A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E500D8F28606FE0006483A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E500D9128606FE1006483A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E500D9428606FE1006483A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E500D9628606FE1006483A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E500D9B28606FE2006483A0 /* Learning-ReactiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning-ReactiveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E500D9F28606FE2006483A0 /* Learning_ReactiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_ReactiveTests.swift; sourceTree = "<group>"; };
+		1E500DA528606FE2006483A0 /* Learning-ReactiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Learning-ReactiveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E500DA928606FE2006483A0 /* Learning_ReactiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_ReactiveUITests.swift; sourceTree = "<group>"; };
+		1E500DAB28606FE2006483A0 /* Learning_ReactiveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_ReactiveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E500D8228606FE0006483A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E500D9828606FE2006483A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E500DA228606FE2006483A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E500D7C28606FE0006483A0 = {
+			isa = PBXGroup;
+			children = (
+				1E500D8728606FE0006483A0 /* Learning-Reactive */,
+				1E500D9E28606FE2006483A0 /* Learning-ReactiveTests */,
+				1E500DA828606FE2006483A0 /* Learning-ReactiveUITests */,
+				1E500D8628606FE0006483A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E500D8628606FE0006483A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E500D8528606FE0006483A0 /* Learning-Reactive.app */,
+				1E500D9B28606FE2006483A0 /* Learning-ReactiveTests.xctest */,
+				1E500DA528606FE2006483A0 /* Learning-ReactiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E500D8728606FE0006483A0 /* Learning-Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				1E500D8828606FE0006483A0 /* AppDelegate.swift */,
+				1E500D8A28606FE0006483A0 /* SceneDelegate.swift */,
+				1E500D8C28606FE0006483A0 /* ViewController.swift */,
+				1E500D8E28606FE0006483A0 /* Main.storyboard */,
+				1E500D9128606FE1006483A0 /* Assets.xcassets */,
+				1E500D9328606FE1006483A0 /* LaunchScreen.storyboard */,
+				1E500D9628606FE1006483A0 /* Info.plist */,
+			);
+			path = "Learning-Reactive";
+			sourceTree = "<group>";
+		};
+		1E500D9E28606FE2006483A0 /* Learning-ReactiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E500D9F28606FE2006483A0 /* Learning_ReactiveTests.swift */,
+			);
+			path = "Learning-ReactiveTests";
+			sourceTree = "<group>";
+		};
+		1E500DA828606FE2006483A0 /* Learning-ReactiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E500DA928606FE2006483A0 /* Learning_ReactiveUITests.swift */,
+				1E500DAB28606FE2006483A0 /* Learning_ReactiveUITestsLaunchTests.swift */,
+			);
+			path = "Learning-ReactiveUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E500D8428606FE0006483A0 /* Learning-Reactive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E500DAF28606FE2006483A0 /* Build configuration list for PBXNativeTarget "Learning-Reactive" */;
+			buildPhases = (
+				1E500D8128606FE0006483A0 /* Sources */,
+				1E500D8228606FE0006483A0 /* Frameworks */,
+				1E500D8328606FE0006483A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Learning-Reactive";
+			productName = "Learning-Reactive";
+			productReference = 1E500D8528606FE0006483A0 /* Learning-Reactive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E500D9A28606FE2006483A0 /* Learning-ReactiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E500DB228606FE2006483A0 /* Build configuration list for PBXNativeTarget "Learning-ReactiveTests" */;
+			buildPhases = (
+				1E500D9728606FE2006483A0 /* Sources */,
+				1E500D9828606FE2006483A0 /* Frameworks */,
+				1E500D9928606FE2006483A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E500D9D28606FE2006483A0 /* PBXTargetDependency */,
+			);
+			name = "Learning-ReactiveTests";
+			productName = "Learning-ReactiveTests";
+			productReference = 1E500D9B28606FE2006483A0 /* Learning-ReactiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E500DA428606FE2006483A0 /* Learning-ReactiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E500DB528606FE2006483A0 /* Build configuration list for PBXNativeTarget "Learning-ReactiveUITests" */;
+			buildPhases = (
+				1E500DA128606FE2006483A0 /* Sources */,
+				1E500DA228606FE2006483A0 /* Frameworks */,
+				1E500DA328606FE2006483A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E500DA728606FE2006483A0 /* PBXTargetDependency */,
+			);
+			name = "Learning-ReactiveUITests";
+			productName = "Learning-ReactiveUITests";
+			productReference = 1E500DA528606FE2006483A0 /* Learning-ReactiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E500D7D28606FE0006483A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1E500D8428606FE0006483A0 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1E500D9A28606FE2006483A0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1E500D8428606FE0006483A0;
+					};
+					1E500DA428606FE2006483A0 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1E500D8428606FE0006483A0;
+					};
+				};
+			};
+			buildConfigurationList = 1E500D8028606FE0006483A0 /* Build configuration list for PBXProject "Learning-Reactive" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E500D7C28606FE0006483A0;
+			productRefGroup = 1E500D8628606FE0006483A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E500D8428606FE0006483A0 /* Learning-Reactive */,
+				1E500D9A28606FE2006483A0 /* Learning-ReactiveTests */,
+				1E500DA428606FE2006483A0 /* Learning-ReactiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E500D8328606FE0006483A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E500D9528606FE1006483A0 /* LaunchScreen.storyboard in Resources */,
+				1E500D9228606FE1006483A0 /* Assets.xcassets in Resources */,
+				1E500D9028606FE0006483A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E500D9928606FE2006483A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E500DA328606FE2006483A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E500D8128606FE0006483A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E500D8D28606FE0006483A0 /* ViewController.swift in Sources */,
+				1E500D8928606FE0006483A0 /* AppDelegate.swift in Sources */,
+				1E500D8B28606FE0006483A0 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E500D9728606FE2006483A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E500DA028606FE2006483A0 /* Learning_ReactiveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E500DA128606FE2006483A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E500DAA28606FE2006483A0 /* Learning_ReactiveUITests.swift in Sources */,
+				1E500DAC28606FE2006483A0 /* Learning_ReactiveUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E500D9D28606FE2006483A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E500D8428606FE0006483A0 /* Learning-Reactive */;
+			targetProxy = 1E500D9C28606FE2006483A0 /* PBXContainerItemProxy */;
+		};
+		1E500DA728606FE2006483A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E500D8428606FE0006483A0 /* Learning-Reactive */;
+			targetProxy = 1E500DA628606FE2006483A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E500D8E28606FE0006483A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E500D8F28606FE0006483A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E500D9328606FE1006483A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E500D9428606FE1006483A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E500DAD28606FE2006483A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E500DAE28606FE2006483A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E500DB028606FE2006483A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2DNT83345;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Learning-Reactive/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nnininnine.Learning-Reactive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E500DB128606FE2006483A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2DNT83345;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Learning-Reactive/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nnininnine.Learning-Reactive";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E500DB328606FE2006483A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2DNT83345;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nnininnine.Learning-ReactiveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learning-Reactive.app/Learning-Reactive";
+			};
+			name = Debug;
+		};
+		1E500DB428606FE2006483A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2DNT83345;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nnininnine.Learning-ReactiveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Learning-Reactive.app/Learning-Reactive";
+			};
+			name = Release;
+		};
+		1E500DB628606FE2006483A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2DNT83345;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nnininnine.Learning-ReactiveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Learning-Reactive";
+			};
+			name = Debug;
+		};
+		1E500DB728606FE2006483A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A2DNT83345;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nnininnine.Learning-ReactiveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Learning-Reactive";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E500D8028606FE0006483A0 /* Build configuration list for PBXProject "Learning-Reactive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E500DAD28606FE2006483A0 /* Debug */,
+				1E500DAE28606FE2006483A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E500DAF28606FE2006483A0 /* Build configuration list for PBXNativeTarget "Learning-Reactive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E500DB028606FE2006483A0 /* Debug */,
+				1E500DB128606FE2006483A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E500DB228606FE2006483A0 /* Build configuration list for PBXNativeTarget "Learning-ReactiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E500DB328606FE2006483A0 /* Debug */,
+				1E500DB428606FE2006483A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E500DB528606FE2006483A0 /* Build configuration list for PBXNativeTarget "Learning-ReactiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E500DB628606FE2006483A0 /* Debug */,
+				1E500DB728606FE2006483A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E500D7D28606FE0006483A0 /* Project object */;
+}
