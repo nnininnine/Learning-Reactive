@@ -6,15 +6,24 @@
 //
 
 import Foundation
+import RxSwift
 
 class MainViewModel {
     // MARK: Property
 
-    let modules: Modules = [Module(name: "Convert thai digit", storyboardIdentifier: "ThaiDigitStoryboard", identifier: "ThaiDigitViewController")]
+    let observable: Observable<Modules> = Observable.from(optional: [Module(name: "Convert Thai Digit", storyboardIdentifier: "ThaiDigitStoryboard", identifier: "ThaiDigitViewController")] as? Modules ?? [])
+    let disposeBag: DisposeBag = .init()
+    let cellIdentifier: String = "ModuleCell"
 
     // MARK: Initial
 
     init() {
-        print("init")
+        print("init main view model")
+    }
+
+    // MARK: Methods
+
+    func routeToModule(source: MainViewController, _ module: Module) {
+        print("navigate to \(module.identifier) from \(source.restorationIdentifier ?? "None")")
     }
 }

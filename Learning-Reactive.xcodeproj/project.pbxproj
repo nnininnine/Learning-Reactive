@@ -21,6 +21,8 @@
 		1E500DC228607915006483A0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DC128607915006483A0 /* MainViewModel.swift */; };
 		1E500DC428607927006483A0 /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DC328607927006483A0 /* Module.swift */; };
 		1E500DC728607C3D006483A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DC628607C3D006483A0 /* Constants.swift */; };
+		1E500DCB28608754006483A0 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DC928608754006483A0 /* ModuleCell.swift */; };
+		1E500DCC28608754006483A0 /* ModuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E500DCA28608754006483A0 /* ModuleCell.xib */; };
 		6E20D22DD17F3969F62EBB35 /* Pods_Learning_ReactiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */; };
 		DEDD9DADC1ACA35D35387E85 /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8923BD3EAB046D3608110B /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		1E500DC128607915006483A0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		1E500DC328607927006483A0 /* Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
 		1E500DC628607C3D006483A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1E500DC928608754006483A0 /* ModuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCell.swift; sourceTree = "<group>"; };
+		1E500DCA28608754006483A0 /* ModuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleCell.xib; sourceTree = "<group>"; };
 		3875886B0AA8D7F8EA45893A /* Pods-Learning-Reactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-Reactive.debug.xcconfig"; path = "Target Support Files/Pods-Learning-Reactive/Pods-Learning-Reactive.debug.xcconfig"; sourceTree = "<group>"; };
 		4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_ReactiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F667A3B53824B780245A6 /* Pods_Learning_Reactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_Reactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +195,7 @@
 		1E500DBE286078C3006483A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E500DC828608742006483A0 /* ModuleCell */,
 				1E500D8C28606FE0006483A0 /* MainViewController.swift */,
 			);
 			path = View;
@@ -220,6 +225,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		1E500DC828608742006483A0 /* ModuleCell */ = {
+			isa = PBXGroup;
+			children = (
+				1E500DC928608754006483A0 /* ModuleCell.swift */,
+				1E500DCA28608754006483A0 /* ModuleCell.xib */,
+			);
+			path = ModuleCell;
+			sourceTree = "<group>";
+		};
 		3A0520074D52DE27D8DF522C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +254,6 @@
 				EB7BD5C400A31692B33EB6D4 /* Pods-Learning-ReactiveTests.debug.xcconfig */,
 				A93EE09562FB2A7499864A3B /* Pods-Learning-ReactiveTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -354,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E500D9528606FE1006483A0 /* LaunchScreen.storyboard in Resources */,
+				1E500DCC28608754006483A0 /* ModuleCell.xib in Resources */,
 				1E500D9228606FE1006483A0 /* Assets.xcassets in Resources */,
 				1E500D9028606FE0006483A0 /* Main.storyboard in Resources */,
 			);
@@ -484,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E500DC228607915006483A0 /* MainViewModel.swift in Sources */,
+				1E500DCB28608754006483A0 /* ModuleCell.swift in Sources */,
 				1E500D8D28606FE0006483A0 /* MainViewController.swift in Sources */,
 				1E500D8928606FE0006483A0 /* AppDelegate.swift in Sources */,
 				1E500DBD286078BC006483A0 /* ThaiDigitViewController.swift in Sources */,
