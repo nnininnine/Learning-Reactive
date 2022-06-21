@@ -25,5 +25,10 @@ class MainViewModel {
 
     func routeToModule(source: MainViewController, _ module: Module) {
         print("navigate to \(module.identifier) from \(source.restorationIdentifier ?? "None")")
+        let storyboard = UIStoryboard(name: module.storyboardIdentifier, bundle: nil)
+        let destination = storyboard.instantiateViewController(identifier: module.identifier)
+
+        // navigate to destination
+        source.navigationController?.pushViewController(destination, animated: true)
     }
 }

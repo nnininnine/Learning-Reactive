@@ -23,6 +23,8 @@
 		1E500DC728607C3D006483A0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DC628607C3D006483A0 /* Constants.swift */; };
 		1E500DCB28608754006483A0 /* ModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DC928608754006483A0 /* ModuleCell.swift */; };
 		1E500DCC28608754006483A0 /* ModuleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E500DCA28608754006483A0 /* ModuleCell.xib */; };
+		1E500DCE2861602D006483A0 /* ThaiDigitStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E500DCD2861602D006483A0 /* ThaiDigitStoryboard.storyboard */; };
+		1E500DD128616F68006483A0 /* ThaiDigitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DD028616F68006483A0 /* ThaiDigitViewModel.swift */; };
 		6E20D22DD17F3969F62EBB35 /* Pods_Learning_ReactiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */; };
 		DEDD9DADC1ACA35D35387E85 /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8923BD3EAB046D3608110B /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +66,8 @@
 		1E500DC628607C3D006483A0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1E500DC928608754006483A0 /* ModuleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCell.swift; sourceTree = "<group>"; };
 		1E500DCA28608754006483A0 /* ModuleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModuleCell.xib; sourceTree = "<group>"; };
+		1E500DCD2861602D006483A0 /* ThaiDigitStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThaiDigitStoryboard.storyboard; sourceTree = "<group>"; };
+		1E500DD028616F68006483A0 /* ThaiDigitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiDigitViewModel.swift; sourceTree = "<group>"; };
 		3875886B0AA8D7F8EA45893A /* Pods-Learning-Reactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-Reactive.debug.xcconfig"; path = "Target Support Files/Pods-Learning-Reactive/Pods-Learning-Reactive.debug.xcconfig"; sourceTree = "<group>"; };
 		4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_ReactiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F667A3B53824B780245A6 /* Pods_Learning_Reactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_Reactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +183,7 @@
 		1E500DBA2860788D006483A0 /* ThaiDigit */ = {
 			isa = PBXGroup;
 			children = (
+				1E500DCF28616F4D006483A0 /* ViewModel */,
 				1E500DBB286078AC006483A0 /* View */,
 			);
 			path = ThaiDigit;
@@ -188,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				1E500DBC286078BC006483A0 /* ThaiDigitViewController.swift */,
+				1E500DCD2861602D006483A0 /* ThaiDigitStoryboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +238,14 @@
 				1E500DCA28608754006483A0 /* ModuleCell.xib */,
 			);
 			path = ModuleCell;
+			sourceTree = "<group>";
+		};
+		1E500DCF28616F4D006483A0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E500DD028616F68006483A0 /* ThaiDigitViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3A0520074D52DE27D8DF522C /* Frameworks */ = {
@@ -367,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E500D9528606FE1006483A0 /* LaunchScreen.storyboard in Resources */,
+				1E500DCE2861602D006483A0 /* ThaiDigitStoryboard.storyboard in Resources */,
 				1E500DCC28608754006483A0 /* ModuleCell.xib in Resources */,
 				1E500D9228606FE1006483A0 /* Assets.xcassets in Resources */,
 				1E500D9028606FE0006483A0 /* Main.storyboard in Resources */,
@@ -504,6 +519,7 @@
 				1E500DBD286078BC006483A0 /* ThaiDigitViewController.swift in Sources */,
 				1E500DC728607C3D006483A0 /* Constants.swift in Sources */,
 				1E500D8B28606FE0006483A0 /* SceneDelegate.swift in Sources */,
+				1E500DD128616F68006483A0 /* ThaiDigitViewModel.swift in Sources */,
 				1E500DC428607927006483A0 /* Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

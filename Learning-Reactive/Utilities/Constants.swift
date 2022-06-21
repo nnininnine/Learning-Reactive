@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ThaiDigit: String {
+enum ThaiDigit: String, CaseIterable {
     case ZERO = "๐"
     case ONE = "๑"
     case TWO = "๒"

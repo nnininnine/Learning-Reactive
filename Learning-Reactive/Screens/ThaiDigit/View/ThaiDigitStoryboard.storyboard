@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Convert to Thai Digit-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ThaiDigitViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="ThaiDigitViewController" customModule="Learning_Reactive" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="digit" translatesAutoresizingMaskIntoConstraints="NO" id="PzG-2Z-9qd">
+                                <rect key="frame" x="20" y="496" width="374" height="366"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Thai digit" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSk-BR-BWP">
+                                <rect key="frame" x="20" y="130" width="374" height="324"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="324" id="8cc-gK-zaM"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai digit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRq-Mv-1rV">
+                                <rect key="frame" x="20" y="88" width="75" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="8s9-Ca-t3G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvS-wN-QFN">
+                                <rect key="frame" x="20" y="454" width="40" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Xfv-YP-boW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="NSk-BR-BWP" secondAttribute="trailing" constant="20" id="3XV-uG-9VK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PzG-2Z-9qd" secondAttribute="trailing" constant="20" id="FP2-Oi-OlR"/>
+                            <constraint firstItem="NSk-BR-BWP" firstAttribute="top" secondItem="vRq-Mv-1rV" secondAttribute="bottom" id="O3u-vL-ruU"/>
+                            <constraint firstItem="PzG-2Z-9qd" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="UdP-5n-17y"/>
+                            <constraint firstItem="PzG-2Z-9qd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ceC-FU-Zg2"/>
+                            <constraint firstItem="bvS-wN-QFN" firstAttribute="top" secondItem="NSk-BR-BWP" secondAttribute="bottom" id="ciW-fC-BLt"/>
+                            <constraint firstItem="PzG-2Z-9qd" firstAttribute="top" secondItem="bvS-wN-QFN" secondAttribute="bottom" id="ep7-FS-zgQ"/>
+                            <constraint firstItem="NSk-BR-BWP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fOF-Do-nOR"/>
+                            <constraint firstItem="vRq-Mv-1rV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iQe-g7-tMA"/>
+                            <constraint firstItem="bvS-wN-QFN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="mHk-BU-K3M"/>
+                            <constraint firstItem="vRq-Mv-1rV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rNW-w4-J2M"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Convert to Thai Digit" id="wxt-2W-MVu"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="digitTextView" destination="PzG-2Z-9qd" id="eMi-yH-t3Q"/>
+                        <outlet property="thaiDigitTextView" destination="NSk-BR-BWP" id="gDG-4U-wYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.623188405797109" y="108.48214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
