@@ -29,6 +29,7 @@
 		1E500DD728619AD5006483A0 /* LoginValidateStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E500DD628619AD5006483A0 /* LoginValidateStoryboard.storyboard */; };
 		1E500DDA2861A375006483A0 /* LoginValidateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DD92861A375006483A0 /* LoginValidateViewModel.swift */; };
 		1E500DE12861B362006483A0 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DE02861B362006483A0 /* Pokemon.swift */; };
+		1E500DE42861B3CC006483A0 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DE32861B3CC006483A0 /* HttpHelper.swift */; };
 		6E20D22DD17F3969F62EBB35 /* Pods_Learning_ReactiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */; };
 		DEDD9DADC1ACA35D35387E85 /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8923BD3EAB046D3608110B /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,6 +77,7 @@
 		1E500DD628619AD5006483A0 /* LoginValidateStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginValidateStoryboard.storyboard; sourceTree = "<group>"; };
 		1E500DD92861A375006483A0 /* LoginValidateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidateViewModel.swift; sourceTree = "<group>"; };
 		1E500DE02861B362006483A0 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		1E500DE32861B3CC006483A0 /* HttpHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
 		3875886B0AA8D7F8EA45893A /* Pods-Learning-Reactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-Reactive.debug.xcconfig"; path = "Target Support Files/Pods-Learning-Reactive/Pods-Learning-Reactive.debug.xcconfig"; sourceTree = "<group>"; };
 		4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_ReactiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F667A3B53824B780245A6 /* Pods_Learning_Reactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_Reactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 		1E500D8728606FE0006483A0 /* Learning-Reactive */ = {
 			isa = PBXGroup;
 			children = (
+				1E500DE22861B3B6006483A0 /* Helper */,
 				1E500DC528607C2E006483A0 /* Utilities */,
 				1E500DB82860770B006483A0 /* Screens */,
 				1E500D8828606FE0006483A0 /* AppDelegate.swift */,
@@ -305,6 +308,7 @@
 		1E500DDE2861B33F006483A0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E500DE52861B529006483A0 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -314,6 +318,21 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E500DE22861B3B6006483A0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				1E500DE32861B3CC006483A0 /* HttpHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		1E500DE52861B529006483A0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		3A0520074D52DE27D8DF522C /* Frameworks */ = {
@@ -592,6 +611,7 @@
 				1E500DC728607C3D006483A0 /* Constants.swift in Sources */,
 				1E500D8B28606FE0006483A0 /* SceneDelegate.swift in Sources */,
 				1E500DD128616F68006483A0 /* ThaiDigitViewModel.swift in Sources */,
+				1E500DE42861B3CC006483A0 /* HttpHelper.swift in Sources */,
 				1E500DC428607927006483A0 /* Module.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

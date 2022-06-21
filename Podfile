@@ -8,6 +8,7 @@ target 'Learning-Reactive' do
   # Pods for Learning-Reactive
   pod 'RxSwift'
   pod 'RxCocoa'
+#  pod 'Alamofire'
 
   target 'Learning-ReactiveTests' do
     inherit! :search_paths

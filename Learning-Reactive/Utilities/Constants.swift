@@ -19,3 +19,8 @@ enum ThaiDigit: String, CaseIterable {
     case EIGHT = "๘"
     case NINE = "๙"
 }
+
+enum PokedexConstants {
+    static let baseURL: String = "https://pokeapi.co/api/v2"
+    static let pokemonEndpoint: String = "/pokemon"
+}
