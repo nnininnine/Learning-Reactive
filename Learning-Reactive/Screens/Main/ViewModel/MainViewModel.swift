@@ -13,7 +13,8 @@ class MainViewModel {
 
     let observable: Observable<Modules> = Observable.from(optional: [
         Module(name: "Convert Thai Digit", storyboardIdentifier: "ThaiDigitStoryboard", identifier: "ThaiDigitViewController"),
-        Module(name: "Login Validation", storyboardIdentifier: "LoginValidateStoryboard", identifier: "LoginValidateViewController")
+        Module(name: "Login Validation", storyboardIdentifier: "LoginValidateStoryboard", identifier: "LoginValidateViewController"),
+        Module(name: "Pokedex", storyboardIdentifier: "PokedexStoryboard", identifier: "PokedexViewController")
     ] as? Modules ?? [])
     let disposeBag: DisposeBag = .init()
     let cellIdentifier: String = "ModuleCell"
