@@ -11,7 +11,10 @@ import RxSwift
 class MainViewModel {
     // MARK: Property
 
-    let observable: Observable<Modules> = Observable.from(optional: [Module(name: "Convert Thai Digit", storyboardIdentifier: "ThaiDigitStoryboard", identifier: "ThaiDigitViewController")] as? Modules ?? [])
+    let observable: Observable<Modules> = Observable.from(optional: [
+        Module(name: "Convert Thai Digit", storyboardIdentifier: "ThaiDigitStoryboard", identifier: "ThaiDigitViewController"),
+        Module(name: "Login Validation", storyboardIdentifier: "LoginValidateStoryboard", identifier: "LoginValidateViewController")
+    ] as? Modules ?? [])
     let disposeBag: DisposeBag = .init()
     let cellIdentifier: String = "ModuleCell"
 
