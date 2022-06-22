@@ -6,11 +6,15 @@
 //
 
 import Foundation
+import RxSwift
 
 class PokemonViewModel {
     // MARK: Property
 
     var url: String?
+    var pokemonPublisher: PublishSubject<Pokemon> = .init()
+    let disposeBag: DisposeBag = .init()
+    private let pokemonService: PokemonService = .init()
 
     // MARK: Init
 
@@ -23,4 +27,6 @@ class PokemonViewModel {
     }
 
     // MARK: Methods
+
+    func getPokemonInfo() {}
 }

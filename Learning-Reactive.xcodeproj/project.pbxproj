@@ -39,6 +39,7 @@
 		1EEE74A92862C17900693A60 /* PokedexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE74A82862C17900693A60 /* PokedexService.swift */; };
 		1EEE74AF2862D87500693A60 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE74AE2862D87500693A60 /* PokemonViewController.swift */; };
 		1EEE74B12862D88200693A60 /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE74B02862D88200693A60 /* PokemonViewModel.swift */; };
+		1EEE74B42862ED2200693A60 /* PokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE74B32862ED2200693A60 /* PokemonService.swift */; };
 		6E20D22DD17F3969F62EBB35 /* Pods_Learning_ReactiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */; };
 		DEDD9DADC1ACA35D35387E85 /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8923BD3EAB046D3608110B /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		1EEE74A82862C17900693A60 /* PokedexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexService.swift; sourceTree = "<group>"; };
 		1EEE74AE2862D87500693A60 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		1EEE74B02862D88200693A60 /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		1EEE74B32862ED2200693A60 /* PokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonService.swift; sourceTree = "<group>"; };
 		3875886B0AA8D7F8EA45893A /* Pods-Learning-Reactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-Reactive.debug.xcconfig"; path = "Target Support Files/Pods-Learning-Reactive/Pods-Learning-Reactive.debug.xcconfig"; sourceTree = "<group>"; };
 		4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_ReactiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F667A3B53824B780245A6 /* Pods_Learning_Reactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_Reactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -371,6 +373,7 @@
 		1EEE74AA2862D67800693A60 /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE74B22862ED1400693A60 /* Service */,
 				1EEE74AD2862D71200693A60 /* ViewModel */,
 				1EEE74AC2862D70B00693A60 /* View */,
 				1EEE74AB2862D70600693A60 /* Model */,
@@ -400,6 +403,14 @@
 				1EEE74B02862D88200693A60 /* PokemonViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1EEE74B22862ED1400693A60 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1EEE74B32862ED2200693A60 /* PokemonService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		3A0520074D52DE27D8DF522C /* Frameworks */ = {
@@ -680,6 +691,7 @@
 				1E500D8928606FE0006483A0 /* AppDelegate.swift in Sources */,
 				1E500DBD286078BC006483A0 /* ThaiDigitViewController.swift in Sources */,
 				1EEE74AF2862D87500693A60 /* PokemonViewController.swift in Sources */,
+				1EEE74B42862ED2200693A60 /* PokemonService.swift in Sources */,
 				1E500DC728607C3D006483A0 /* Constants.swift in Sources */,
 				1EEE74A92862C17900693A60 /* PokedexService.swift in Sources */,
 				1E500D8B28606FE0006483A0 /* SceneDelegate.swift in Sources */,
