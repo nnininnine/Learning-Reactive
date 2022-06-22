@@ -35,6 +35,7 @@
 		1E500DEC2861CB28006483A0 /* PokemonOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E500DEB2861CB28006483A0 /* PokemonOverview.swift */; };
 		1EEE74A32862B8A900693A60 /* PokedexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE74A12862B8A900693A60 /* PokedexCell.swift */; };
 		1EEE74A42862B8A900693A60 /* PokedexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EEE74A22862B8A900693A60 /* PokedexCell.xib */; };
+		1EEE74A62862BAF200693A60 /* PokedexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEE74A52862BAF200693A60 /* PokedexViewModel.swift */; };
 		6E20D22DD17F3969F62EBB35 /* Pods_Learning_ReactiveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */; };
 		DEDD9DADC1ACA35D35387E85 /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8923BD3EAB046D3608110B /* Pods_Learning_Reactive_Learning_ReactiveUITests.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +89,7 @@
 		1E500DEB2861CB28006483A0 /* PokemonOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonOverview.swift; sourceTree = "<group>"; };
 		1EEE74A12862B8A900693A60 /* PokedexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexCell.swift; sourceTree = "<group>"; };
 		1EEE74A22862B8A900693A60 /* PokedexCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokedexCell.xib; sourceTree = "<group>"; };
+		1EEE74A52862BAF200693A60 /* PokedexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewModel.swift; sourceTree = "<group>"; };
 		3875886B0AA8D7F8EA45893A /* Pods-Learning-Reactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Learning-Reactive.debug.xcconfig"; path = "Target Support Files/Pods-Learning-Reactive/Pods-Learning-Reactive.debug.xcconfig"; sourceTree = "<group>"; };
 		4BBE8CDE7A94CB15DC52F614 /* Pods_Learning_ReactiveTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_ReactiveTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554F667A3B53824B780245A6 /* Pods_Learning_Reactive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Learning_Reactive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +331,7 @@
 		1E500DDF2861B345006483A0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE74A52862BAF200693A60 /* PokedexViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -617,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEE74A62862BAF200693A60 /* PokedexViewModel.swift in Sources */,
 				1E500DC228607915006483A0 /* MainViewModel.swift in Sources */,
 				1E500DCB28608754006483A0 /* ModuleCell.swift in Sources */,
 				1E500DDA2861A375006483A0 /* LoginValidateViewModel.swift in Sources */,
