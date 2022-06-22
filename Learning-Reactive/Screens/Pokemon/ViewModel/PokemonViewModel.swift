@@ -18,5 +18,9 @@ class PokemonViewModel {
         self.url = url
     }
 
+    init() {
+        self.url = nil
+    }
+
     // MARK: Methods
 }
