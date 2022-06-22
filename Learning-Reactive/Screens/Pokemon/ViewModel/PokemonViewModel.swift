@@ -11,31 +11,44 @@ import RxSwift
 class PokemonViewModel {
     // MARK: Property
 
-    private var url: String?
+    var pokemonResult: PokemonResult?
     var pokemonPublisher: PublishSubject<Pokemon> = .init()
     let disposeBag: DisposeBag = .init()
     private let pokemonService: PokemonService = .init()
 
     // MARK: Init
 
-    init(url: String) {
-        self.url = url
+    init(pokemonResult: PokemonResult) {
+        self.pokemonResult = pokemonResult
     }
 
     init() {
-        self.url = nil
+        self.pokemonResult = nil
     }
 
     // MARK: Methods
 
     func getPokemonInfo() {
-        guard let url = url else { return }
+        guard let url = pokemonResult?.url else { return }
         pokemonService.getPokemonInfo(url) { [weak self] success, pokemon, _ in
             if success {
                 guard let pokemon: Pokemon = pokemon else { return }
 
                 self?.pokemonPublisher.onNext(pokemon)
             }
+        }
+    }
+
+    func getPokemonImage(_ url: String?) -> UIImage? {
+        guard let url = url else { return nil }
+        guard let url = URL(string: url) else { return nil }
+        do {
+            let data = try Data(contentsOf: url)
+            let image = UIImage(data: data)
+
+            return image
+        } catch {
+            return nil
         }
     }
 }
