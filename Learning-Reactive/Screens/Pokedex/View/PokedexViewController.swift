@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
+class PokedexViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
