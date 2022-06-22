@@ -13,6 +13,7 @@ class PokedexViewModel {
 
     var pokedexPublisher: PublishSubject<PokemonResults> = .init()
     let disposeBag: DisposeBag = .init()
+    private let pokedexService: PokedexService = .init()
 
     // MARK: Init
 
@@ -20,5 +21,5 @@ class PokedexViewModel {
 
     // MARK: Methods
 
-    func fetchPokedex() {}
+    func getPokedex() {}
 }
