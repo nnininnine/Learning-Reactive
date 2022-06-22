@@ -28,5 +28,14 @@ class PokemonViewModel {
 
     // MARK: Methods
 
-    func getPokemonInfo() {}
+    func getPokemonInfo() {
+        guard let url = url else { return }
+        pokemonService.getPokemonInfo(url) { [weak self] success, pokemon, _ in
+            if success {
+                guard let pokemon: Pokemon = pokemon else { return }
+
+                self?.pokemonPublisher.onNext(pokemon)
+            }
+        }
+    }
 }

@@ -34,9 +34,11 @@ class PokemonViewController: UIViewController {
     func setup() {
         // subscribe
         viewModel.pokemonPublisher.subscribe(onNext: { [weak self] pokemon in
-            print(pokemon)
-            self?.nameLabel.text = pokemon.name
+//            self?.nameLabel.text = pokemon.name
             self?.navigationItem.title = pokemon.name
         }).disposed(by: viewModel.disposeBag)
+
+        // get pokemon data
+        viewModel.getPokemonInfo()
     }
 }
