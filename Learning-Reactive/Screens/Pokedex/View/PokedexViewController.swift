@@ -22,8 +22,17 @@ class PokedexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupTableView()
         setup()
     }
 
-    func setup() {}
+    func setupTableView() {
+        tableView.register(PokedexCell.nib(), forCellReuseIdentifier: PokedexCell.identifier)
+    }
+
+    func setup() {
+        viewModel.pokedexPublisher.bind(to: tableView.rx.items(cellIdentifier: PokedexCell.identifier)) { _, _, _ in
+
+        }.disposed(by: viewModel.disposeBag)
+    }
 }
