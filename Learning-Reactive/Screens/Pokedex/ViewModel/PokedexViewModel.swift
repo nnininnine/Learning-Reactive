@@ -32,8 +32,14 @@ class PokedexViewModel {
             }
         }
     }
-    
-    func routeToPokemon() {
-        
+
+    func routeToPokemon(source: PokedexViewController, _ pokemonResult: PokemonResult) {
+        let storyboard = UIStoryboard(name: "PokedexStoryboard", bundle: nil)
+        guard let destination = storyboard.instantiateViewController(identifier: "PokemonViewController") as? PokemonViewController else { return }
+
+        destination.viewModel = .init(url: pokemonResult.url)
+
+        // navigate to destination
+        source.show(destination, sender: nil)
     }
 }
