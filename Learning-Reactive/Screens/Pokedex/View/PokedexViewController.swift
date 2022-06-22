@@ -12,10 +12,10 @@ class PokedexViewController: UIViewController {
     // MARK: Outlets
 
     @IBOutlet private var tableView: UITableView!
-    
+
     // MARK: Property
-    
-    lazy var viewModel
+
+    lazy var viewModel: PokedexViewModel = .init()
 
     // MARK: Init
 
