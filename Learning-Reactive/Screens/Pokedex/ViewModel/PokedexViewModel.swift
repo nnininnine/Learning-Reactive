@@ -21,5 +21,15 @@ class PokedexViewModel {
 
     // MARK: Methods
 
-    func getPokedex() {}
+    func getPokedex() {
+        pokedexService.getPokedex { [weak self] success, result, err in
+            if success {
+                guard let pokemonResults: PokemonResults = result else { return }
+
+                self?.pokedexPublisher.onNext(pokemonResults)
+            } else {
+                print(err ?? "")
+            }
+        }
+    }
 }
