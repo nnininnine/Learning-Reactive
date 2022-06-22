@@ -6,3 +6,17 @@
 //
 
 import Foundation
+
+class PokemonViewModel {
+    // MARK: Property
+
+    var url: String?
+
+    // MARK: Init
+
+    init(url: String) {
+        self.url = url
+    }
+
+    // MARK: Methods
+}
