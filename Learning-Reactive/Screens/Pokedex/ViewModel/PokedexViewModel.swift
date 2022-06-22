@@ -37,7 +37,7 @@ class PokedexViewModel {
         let storyboard = UIStoryboard(name: "PokedexStoryboard", bundle: nil)
         guard let destination = storyboard.instantiateViewController(identifier: "PokemonViewController") as? PokemonViewController else { return }
 
-        destination.viewModel = .init(url: pokemonResult.url)
+        destination.viewModel = .init(pokemonResult: pokemonResult)
 
         // navigate to destination
         source.show(destination, sender: nil)

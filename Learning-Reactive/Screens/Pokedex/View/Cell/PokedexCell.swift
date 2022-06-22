@@ -24,7 +24,7 @@ class PokedexCell: UITableViewCell {
 
     var pokemon: PokemonResult? {
         didSet {
-            nameLabel.text = pokemon?.name
+            nameLabel.text = pokemon?.name.capitalized
         }
     }
 

@@ -29,15 +29,12 @@ class PokemonViewController: UIViewController {
 
     func setupUI() {
         nameLabel.text = nil
-        navigationItem.title = viewModel.pokemonResult?.name
+        navigationItem.title = viewModel.pokemonResult?.name.capitalized
     }
 
     func setup() {
         // subscribe
         viewModel.pokemonPublisher.subscribe(onNext: { [weak self] pokemon in
-//            self?.nameLabel.text = pokemon.name
-//            self?.navigationItem.title = pokemon.name
-
             // setup image
             self?.imageView.image = self?.viewModel.getPokemonImage(pokemon.sprites.frontDefault)
         }).disposed(by: viewModel.disposeBag)
