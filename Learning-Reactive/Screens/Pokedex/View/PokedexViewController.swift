@@ -31,8 +31,8 @@ class PokedexViewController: UIViewController {
     }
 
     func setup() {
-        viewModel.pokedexPublisher.bind(to: tableView.rx.items(cellIdentifier: PokedexCell.identifier)) { _, _, _ in
-
+        viewModel.pokedexPublisher.bind(to: tableView.rx.items(cellIdentifier: PokedexCell.identifier)) { (_, pokemon: PokemonResult, cell: PokedexCell) in
+            cell.pokemon = pokemon
         }.disposed(by: viewModel.disposeBag)
     }
 }
