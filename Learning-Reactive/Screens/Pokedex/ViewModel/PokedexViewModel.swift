@@ -32,4 +32,8 @@ class PokedexViewModel {
             }
         }
     }
+    
+    func routeToPokemon() {
+        
+    }
 }

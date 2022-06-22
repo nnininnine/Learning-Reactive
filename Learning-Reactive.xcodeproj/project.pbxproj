@@ -189,6 +189,7 @@
 		1E500DB82860770B006483A0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				1EEE74AA2862D67800693A60 /* PokemonDetail */,
 				1E500DDC2861B2D9006483A0 /* Pokedex */,
 				1E500DD2286198ED006483A0 /* LoginValidate */,
 				1E500DBA2860788D006483A0 /* ThaiDigit */,
@@ -362,6 +363,13 @@
 				1EEE74A82862C17900693A60 /* PokedexService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		1EEE74AA2862D67800693A60 /* PokemonDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PokemonDetail;
 			sourceTree = "<group>";
 		};
 		3A0520074D52DE27D8DF522C /* Frameworks */ = {
