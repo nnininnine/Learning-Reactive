@@ -9,6 +9,12 @@ import Foundation
 import UIKit
 
 class PokedexViewController: UIViewController {
+    // MARK: Outlets
+
+    @IBOutlet private var tableView: UITableView!
+
+    // MARK: Init
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
