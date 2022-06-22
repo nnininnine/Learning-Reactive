@@ -21,9 +21,7 @@ class MainViewModel {
 
     // MARK: Initial
 
-    init() {
-        print("init main view model")
-    }
+    init() {}
 
     // MARK: Methods
 

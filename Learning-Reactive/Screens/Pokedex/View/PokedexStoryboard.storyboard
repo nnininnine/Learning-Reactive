@@ -60,6 +60,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="DOL-ea-gAg"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="BRM-Kn-kUF" id="GuK-l7-M0L"/>
+                        <outlet property="nameLabel" destination="fg0-qr-JGP" id="uJs-Er-PIZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YUY-wM-YQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -25,7 +25,6 @@ class MainViewController: UIViewController {
     }
 
     func setupMainScreen() {
-        print("init main view controller")
         // setup table view
         tableView.register(ModuleCell.nib(), forCellReuseIdentifier: ModuleCell.identifier)
 
