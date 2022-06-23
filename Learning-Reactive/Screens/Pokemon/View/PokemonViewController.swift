@@ -15,6 +15,7 @@ class PokemonViewController: UIViewController {
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var heightLabel: UILabel!
     @IBOutlet private var weightLabel: UILabel!
+    @IBOutlet private var typesLabel: UILabel!
 
     // MARK: Property
 
