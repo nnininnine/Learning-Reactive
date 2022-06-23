@@ -13,6 +13,8 @@ class PokemonViewController: UIViewController {
 
     @IBOutlet private var nameLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var heightLabel: UILabel!
+    @IBOutlet private var weightLabel: UILabel!
 
     // MARK: Property
 
@@ -29,8 +31,10 @@ class PokemonViewController: UIViewController {
 
     func setupUI() {
         nameLabel.text = nil
+        heightLabel.text = nil
+        weightLabel.text = nil
         navigationItem.title = viewModel.pokemonResult?.name.capitalized
-        
+
         // set image border radius
         imageView.layer.cornerRadius = 8
     }
