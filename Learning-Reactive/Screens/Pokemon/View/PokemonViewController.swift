@@ -30,6 +30,9 @@ class PokemonViewController: UIViewController {
     func setupUI() {
         nameLabel.text = nil
         navigationItem.title = viewModel.pokemonResult?.name.capitalized
+        
+        // set image border radius
+        imageView.layer.cornerRadius = 8
     }
 
     func setup() {
