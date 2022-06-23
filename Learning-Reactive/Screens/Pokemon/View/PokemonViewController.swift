@@ -42,6 +42,10 @@ class PokemonViewController: UIViewController {
     func setup() {
         // subscribe
         viewModel.pokemonPublisher.subscribe(onNext: { [weak self] pokemon in
+            // setup infomation
+            self?.heightLabel.text = String(format: "%.2f m.", Double(pokemon.height) / 10)
+            self?.weightLabel.text = String(format: "%.2f kg.", Double(pokemon.weight) / 10)
+
             // setup image
             self?.imageView.image = self?.viewModel.getPokemonImage(pokemon.sprites.frontDefault)
         }).disposed(by: viewModel.disposeBag)
