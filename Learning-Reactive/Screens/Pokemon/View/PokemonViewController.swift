@@ -34,6 +34,7 @@ class PokemonViewController: UIViewController {
         nameLabel.text = nil
         heightLabel.text = nil
         weightLabel.text = nil
+        typesLabel.text = nil
         navigationItem.title = viewModel.pokemonResult?.name.capitalized
 
         // set image border radius
@@ -46,6 +47,9 @@ class PokemonViewController: UIViewController {
             // setup infomation
             self?.heightLabel.text = String(format: "%.2f m.", Double(pokemon.height) / 10)
             self?.weightLabel.text = String(format: "%.2f kg.", Double(pokemon.weight) / 10)
+
+            let types: String = pokemon.types.map { $0.type.name.capitalized }.description.replacingOccurrences(of: "\"", with: "")
+            self?.typesLabel.text = types
 
             // setup image
             self?.imageView.image = self?.viewModel.getPokemonImage(pokemon.sprites.frontDefault)
